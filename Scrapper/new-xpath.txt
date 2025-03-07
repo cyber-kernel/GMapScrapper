@@ -1,0 +1,32 @@
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[15]/div/div[2]/div[4]/div[1]/div/div/div[2]/div[4]/div[2]/span[2]/span[2]
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[17]/div/div[2]/div[4]/div[1]/div/div/div[2]/div[4]/div[2]/span[2]/span[2]
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div/div[2]/div[4]/div[1]/div/div/div[2]/div[4]/div[2]/span[2]/span[2]
+
+
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div/div[2]/div[4]/div[2]/div[1]/a 
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div/a
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[9]/div/div[2]/div[4]/div[2]/div[1]/a  == web
+
+
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[9]/div/div[2]/div[4]/div[1]/div/div/div[2]/div[1]/div[2] == name\
+
+
+WEBSITE_XPATH = "div[2]/div[1]/a"
+PHONE_XPATH = "div[1]/div/div/div[2]/div[4]/div[2]/span[2]/span[2]"
+NAME_XPATH = "div[1]/div/div/div[2]/div[1]/div[2]"
+
+BASE_XPATH = "//*[@id='QA0Szd']/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[9]/div/div[2]/div[4]/"
+
+BASE_XPATH = "//*[@id='QA0Szd']/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[{}]/div/div[2]/div[4]/"
+
+WEBSITE_XPATH = BASE_XPATH + "div[2]/div[1]/a"
+PHONE_XPATH = BASE_XPATH + "div[1]/div/div/div[2]/div[4]/div[2]/span[2]/span[2]"
+NAME_XPATH = BASE_XPATH +  "div[1]/div/div/div[2]/div[1]/div[2]"
+
+this is my new xpath of google map dont click on base path to open anpother side card now you just have to start scrollling and have to scrapp the info which are given above
+
+in the base card there is a {} tyhe defauylt value for it is 3 now you just have to increse it by 2 and you will get another card and then scrap the all info and save in a csv file parellely and website xpath have a tag also scrapp the href of that and the datat which you cant find make it as not found and use try excepty and threding and make it fast as much as possible use time delay aslo from time.sleep to load the data properly and after scraping the 5 cards scrooll also

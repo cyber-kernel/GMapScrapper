@@ -1,0 +1,92 @@
+### for this search """play school in delhi"""
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div/a === 1st card
+
+$x('//div[@id="QA0Szd"]//div[3]/div/a')[0].click() ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div/a === 2nd card
+
+$x('//div[@id="QA0Szd"]//div[5]/div/a')[0].click(); ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[7]/div/a  === 3rd card
+
+$x('//div[@id="QA0Szd"]//div[7]/div/a')[0].click();  ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[9]/div/a   === 4th card
+
+$x('//div[@id="QA0Szd"]//div[9]/div/a')[0].click(); ==> relative Xpath 
+
+
+### for this search """ RO service is delhi """
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[3]/div/a === 1st card
+
+$x('//div[@id="QA0Szd"]//div[3]/div/a')[0].click() ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[5]/div/a === 2nd card
+
+$x('//div[@id="QA0Szd"]//div[5]/div/a')[0].click() ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[7]/div/a === 3rd card
+
+$x('//div[@id="QA0Szd"]//div[7]/div/a')[0].click() ==> relative Xpath 
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[9]/div/a === 4th card
+
+$x('//div[@id="QA0Szd"]//div[9]/div/a')[0].click() ==> relative Xpath 
+
+
+
+### As a result the xpath and relative xpath is same for diffrent seaches so it means it will work well
+
+
+
+### May be xpath of side panel
+//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]  === for first card
+//div[@id="QA0Szd"]//div[3]/div/div[1]/div/div/div[2]
+//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]  === for second card 
+//div[@id="QA0Szd"]//div[3]/div/div[1]/div/div/div[2]
+//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]  === for third card
+//div[@id="QA0Szd"]//div[3]/div/div[1]/div/div/div[2]
+
+
+
+
+
+### COMPANY NAME
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1  === for company name
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[2]/div/div[1]/div[1]/h1
+
+//div[@id="QA0Szd"]//div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1  === for company name relative xpath
+
+$x('//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div/div[1]/div[1]/h1')[0].textContent  === for compaany name exact value 
+
+
+### ADDRESS
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[7]/div[3]/button/div/div[2]/div[1]  === for company address
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[7]/div[3]/button/div/div[2]/div[1] === this one is working
+
+//div[@id="QA0Szd"]//div[2]/div/div[1]/div/div/div[7]/div[3]/button/div/div[2]/div[1]  === for company address relative xpath 
+
+$x('//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[7]/div[3]/button/div/div[2]/div[1]')[0].textContent  === for company address exact value
+
+
+### PHONE NUMBER
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[7]/div[5]/button/div/div[2]/div[1] === for phone number
+
+//div[@id="QA0Szd"]//div[7]/div[3]/button/div/div[2]/div[1] === for company phone relative xpath
+
+$x('//div[@id="QA0Szd"]//div[7]/div[5]/button/div/div[2]/div[1]')[0].textContent  == for company phone exact value
+
+
+### WEBSITE
+
+//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[7]/div[5]/a/div/div[2]/div[1]  === for company wbesite
+
+//div[@id="QA0Szd"]//div[7]/div[5]/a/div/div[2]/div[1]  == relative xpath for company webiste
+
+$x('//div[@id="QA0Szd"]//div[7]/div[5]/a/div/div[2]/div[1]')[0].textContent  === exact value for comapny website
+
+
