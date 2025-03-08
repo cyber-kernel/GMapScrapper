@@ -9,7 +9,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # ----------------- CONFIGURATION ----------------- #
 BASE_XPATH = "//*[@id='QA0Szd']/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]/div[{}]/div/div[2]/div[4]/"
-CSV_FILE = "leads.csv"
+# file_name = "leads.csv"
 # XPath of the scrollable container (as tested in DevTools)
 SCROLLABLE_XPATH = '//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[1]/div[1]'
 
@@ -66,6 +66,7 @@ def scroll_scrollable_element(driver):
 # ----------------- MAIN SCRIPT ----------------- #
 def main():
     search_query = input("Enter your search query: ")
+    file_name = input("Enter the CSV file name: ")
     try:
         num_leads = int(input("Enter the number of leads to scrape: "))
     except ValueError:
@@ -124,7 +125,7 @@ def main():
             continue
 
     # Save to CSV
-    with open(CSV_FILE, 'w', newline='', encoding='utf-8') as f:
+    with open(file_name, 'w', newline='', encoding='utf-8') as f:
         fieldnames = ["Lead_Index", "Company_Name", "Phone", "Website"]
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
@@ -132,7 +133,7 @@ def main():
             writer.writerow(row)
     
     driver.quit()
-    print(f"Scraping complete. Data saved to {CSV_FILE}.")
+    print(f"Scraping complete. Data saved to {file_name}.")
 
 if __name__ == "__main__":
     main()
